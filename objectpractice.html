@@ -13,6 +13,20 @@
   };
 
   document.write ('word : '+hello.aword+'<br>');
+
+  for (var key in hello) {
+    document.write(key+ ':' +hello[key]+'<br>');
+  };
+
+</script>
+<script>
+    hello.showAll=function(){
+    for (var key in this) {
+      document.write(key+':'+this[key]+'<br>');
+    }
+  }
+  hello.showAll();
+
 </script>
 
   </body>
