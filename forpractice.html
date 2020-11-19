@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>GARAM&IJI's EU</title>
+  <link rel="stylesheet" href="style.css">
+
+      </head>
+
+      <body>
+        <script>
+
+        var target ={
+            setcolor : function(color){
+              document.querySelector('body').style.color = color;},
+            setBackgroundColor : function(color){
+              document.querySelector('body').style.backgroundColor = color;
+            }
+        };
+        //:var alistt = { alistcolor : function(color){ document.querySelectorAll('a').style.color = color;}};
+          //왜안
+          var alistt = {
+            setColor : function(color){
+                      var alist = document.querySelectorAll('a');
+                      var i = 0;
+                      while (i < alist.length) {
+                      alist[i].style.color = color;
+                      i = i+1;}
+                    }
+                  }
+
+        function buttonclick(nightday){
+          if(nightday.value==='night')
+            {target.setBackgroundColor('gray');
+              target.setcolor('white');
+                nightday.value='day';
+                alistt.setColor('white');
+              }
+              else
+              {target.setBackgroundColor('white');
+              target.setcolor('black');
+            nightday.value='night';
+          alistt.setColor('black');
+                }
+              };
+        </script>
+        <input type="button" name="" value="welcome" onclick="alert('This is the page for remebering our great journey! \nThank you for always playing with me:)')">
+        <input id='time' type="button" name="" value="night" onclick="
+      buttonclick(this);">
+
+        <h1><a href="home.html">2019-20 GARAM&IJI's EU TRAVELING</a></h1>
+
+    <div id="box">
+        <ul >
+          <li><a href="england.html" >ENGLAND</a></li>
+          <li>FRANCE
+          <ol>
+            <li><a href="paris.html" class=country>PARIS</a></li>
+            <li><a href="nice.html" class=country>NICE</a></li>
+          </ol>
+          </li>
+          <li>ITALY
+          <ol>
+            <li><a href="rome.html" class=country>ROME</a></li>
+            <li><a href="florence" class=country>FLORENCE</a></li>
+          </ol>
+        </li>
+          <li><a href="spain.html" >SPAIN</a></li>
+        </ul>
+<div>
+    <p id="date">2019. 12. 19 ~ 2020. 01. 18</p>
+     <img src="IMG_2664.JPG" width="200px">
+  </div>
+    </div>
+<p>가라마 이때 많이 추웠지 우리,,,? 아련 근데 생각해보니까 저기 파리임 ㅋㅋㅋㅋㅋㅋㅋ</p>
+      </body>
+    </html>
